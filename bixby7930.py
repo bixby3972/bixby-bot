@@ -1,6 +1,7 @@
 from lib2to3.pgen2 import driver
 from pickle import APPEND
 import discord
+import os
 from discord.ext import commands
 from youtube_dl import YoutubeDL
 import bs4
@@ -664,5 +665,5 @@ async def on_reaction_add(reaction, users):
             elif str(reaction.emoji) == '\u0035\uFE0F\u20E3':
                 URLPLAY(rinklist[4])
                 await ctx.send("정상적으로 진행되었습니다.")
-
-bot.run('OTQzODY4MjgyMDA2NTQwMzU5.Gi1ReC.W0y0URh7basjM0PYsOYVQND5dmZLPAprKBvv1w')
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
