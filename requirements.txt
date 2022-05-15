@@ -1,0 +1,12 @@
+discord.py==0.16.12
+asyncio
+selenium
+discord.py[voice]
+pip
+beautifulsoup4
+youtube-dl
+ffmpeg-python
+requests
+lxml
+urllib3
+Options
