@@ -665,5 +665,7 @@ async def on_reaction_add(reaction, users):
             elif str(reaction.emoji) == '\u0035\uFE0F\u20E3':
                 URLPLAY(rinklist[4])
                 await ctx.send("정상적으로 진행되었습니다.")
-access_token = os.environ["BOT_TOKEN"]
+                
+                
+access_token = os.environ['BOT_TOKEN']
 bot.run(access_token)
